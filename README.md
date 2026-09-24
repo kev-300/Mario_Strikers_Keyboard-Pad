@@ -36,9 +36,12 @@ void apply_forced_pad_port()
 }
 
  void poll_controllers(bool report)
-
- Guardan y compilan el proyecto, creditos a los usuarios yannicksuter y new-coke donde tome la descompilacion y el archivo strikers-settings.exe
-
+ 
  {
     apply_forced_pad_port();
      for (u32 p = 0; p < PAD_CHANMAX; p++)
+
+
+
+  Guardan y compilan el proyecto, creditos a los usuarios yannicksuter y new-coke donde tome la descompilacion y el archivo strikers-settings.exe
+
