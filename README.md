@@ -8,6 +8,7 @@ ubicarse en la ruta strikers\smstrikers-port\src\platform y buscar el archivo in
 
 en la linea 610 agregar este parche:
 
+```cpp
  SDL_JoystickID s_padId[PAD_CHANMAX];
  bool s_padsLooked = false;
 // STRIKERS_PAD_PORT: fuerza el primer mando que SDL detecta a un puerto específico, en vez de
@@ -40,7 +41,7 @@ void apply_forced_pad_port()
  {
     apply_forced_pad_port();
      for (u32 p = 0; p < PAD_CHANMAX; p++)
-
+```
 
 
   Guardan y compilan el proyecto, creditos a los usuarios yannicksuter y new-coke donde tome la descompilacion y el archivo strikers-settings.exe
