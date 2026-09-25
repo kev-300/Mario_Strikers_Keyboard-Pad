@@ -1,12 +1,12 @@
 Este mod de strikers evade el cambio de teclado a mando en el port 0, (teclado = port 0) (mando = port 1,2,3)
 con este mod el player 1 siempre va a ser el teclado y los restantes mandos, si quieren agregar este parche en otros SO deben modificar lo siguiente:
 
-descargar la descompilacion del usuario yannicksuter
+Descargar la descompilacion del usuario yannicksuter
 https://github.com/yannicksuter/smstrikers-decomp
 
-ubicarse en la ruta strikers\smstrikers-port\src\platform y buscar el archivo input.cpp
+Ubicarse en la ruta strikers\smstrikers-port\src\platform y buscar el archivo input.cpp
 
-en la linea 610 agregar este parche:
+En la linea 610 agregar este parche:
 
 ```cpp
  SDL_JoystickID s_padId[PAD_CHANMAX];
@@ -43,6 +43,5 @@ void apply_forced_pad_port()
      for (u32 p = 0; p < PAD_CHANMAX; p++)
 ```
 
-
-  Guardan y compilan el proyecto, creditos a los usuarios yannicksuter y new-coke donde tome la descompilacion y el archivo strikers-settings.exe
+Guardan y compilan el proyecto, creditos a los usuarios yannicksuter y new-coke donde tome la descompilacion y el archivo strikers-settings.exe
 
